@@ -10,9 +10,9 @@
   <body>
     <nav id="navbar">
       <section id="links">
-        <a href="">About me</a>
-        <a href="">Portfolio</a>
-        <a href="">Contact</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#about-me">About me</a>
+        <a href="#contact-me">Contact</a>
         <a href="#social">Social</a>
       </section>
     </nav>
@@ -21,8 +21,9 @@
       <p>Richard Rovinsky</p>
     </section>
     <main id="main-wrapper">
+      <!-- Portfolio section -->
       <section id="projects">
-        <header id="projects-title">
+        <header class="title">
           <h2>Some of my work</h2>
         </header>
         <section class="project">
@@ -32,33 +33,102 @@
             target="_blank"
             ><img
               class="project-picture"
-              src="/images/hike_camp.png"
+              src="./images/hike_camp.png"
+              alt="Hike & camp hints website"
+          /></a>
+        </section>
+        <section class="project">
+          <a
+            href="https://rikirovinsky.github.io/huddle-landing-page/"
+            class="project-tile"
+            target="_blank"
+            ><img
+              class="project-picture"
+              src="./images/Huddle-challenge-frontend.jpeg"
               alt="Hike & camp hints website"
           /></a>
         </section>
       </section>
+      <!-- About me section -->
+      <section id="about-me">
+        <header class="title">
+          <h2>Little bit about me</h2>
+        </header>
+        <div class="floating-text">
+          <img
+            id="about-me-img"
+            class="me-picture"
+            src="./images/richard_rovinsky.jpg"
+            alt="Me posing for cover picture"
+          />
+
+          <section class="about-me-info">
+            <h3>Passion</h3>
+            <p>
+              I love working with people, hike in the nature and generally bring
+              joy to peoples lives.
+            </p>
+            <h3>Background</h3>
+            <p>
+              I used to teach and hold lectures on various topics, such as
+              <span>Excel</span>, <span>Team building</span> and
+              <span>Scaling company</span>.
+            </p>
+            <h3>Vision</h3>
+            <p>
+              It is year 2020 and I have realized that my teaching days are
+              pretty much numbered. Did not feel right to continue down on this
+              path. Therefore I decide to start developing web pages.
+            </p>
+          </section>
+        </div>
+      </section>
+      <!-- Contact me section -->
+      <section id="contact-me">
+        <header class="title">
+          <h2>Get in touch with me</h2>
+        </header>
+        <section class="contact-me-info">
+          <h3>Want to know more?</h3>
+          <p>
+            I hope to hear from a lot of you. My goal is to work on as many
+            project as it is possible, so send me a message and let's find out
+            if we can work together.
+          </p>
+
+          <!--  -->
+          <div class="meassage">
+            <form method="post" action="mailto:richardrovinsky@gmail.com">
+              <input type="submit" value="Send message" />
+            </form>
+          </div>
+        </section>
+        <!--  -->
+      </section>
     </main>
     <footer>
+      <!-- Links and social section -->
       <section id="social">
         <a
           class="social-link"
           href="https://twitter.com/RovinskyRichard"
           target="_blank"
-          >Twitter</a
-        >
+          ><img src="./images/twitter.png" alt=""
+        /></a>
+        
         <a
           class="social-link"
           id="profile-link"
           href="https://github.com/rikirovinsky"
           target="_blank"
-          >Github</a
-        >
+          ><img src="./images/github.png" alt=""
+        /></a>
         <a
           class="social-link"
           href="https://www.freecodecamp.org/richardrovinsky"
           target="_blank"
-          >freecodecamp</a
-        >
+          ><img src="./images/freecodecamp.png" alt=""
+        /></a>
       </section>
     </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

@@ -18,12 +18,10 @@ body {
   font-family: "Lato", sans-serif;
   background-color: var(--mainBackground);
   color: var(--font);
-  box-sizing: border-box;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   align-content: center;
-  padding: 2em;
   position: relative;
 }
 
@@ -43,15 +41,13 @@ body {
 
 #links a {
   padding: 0.5em;
-}
-
-a {
   font-size: 1.2em;
   text-decoration: none;
   color: var(--font);
 }
 
 #welcome-section {
+  width: 90%;
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -71,27 +67,139 @@ a {
 }
 
 #main-wrapper {
-  background-color: var(--mainSection);
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 
 #projects {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   width: 100%;
 }
 
-.project a {
+.title {
+  background-color: var(--mainSection);
+  height: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 00.5em 0;
+}
+
+.title h2 {
+  font-size: 1.5em;
+}
+
+.project {
+  height: auto;
   max-width: 100%;
+  margin-top: 00.5em;
+}
+
+.project-picture {
+  height: auto;
+  max-width: 100%;
+}
+
+#about-me {
+  max-width: 100%;
+  height: auto;
+}
+
+.floating-text {
+  padding: 1em 2em;
+  text-align: center;
+}
+
+#about-me-img {
+  max-width: 10em;
+  height: auto;
+  padding: 0 1em 0.5em 0;
+  float: left;
+}
+
+h3,
+p {
+  padding-bottom: 0.5em;
+  text-align: justify;
+}
+
+.contact-me-info {
+  padding: 1em 2em;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.meassage {
+  padding-top: 1em;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+input[type="submit"] {
+  width: 10em;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--titles);
+  color: var(--mainBackground);
+  height: 2em;
+  border-radius: 2em;
+  font-size: 1.25em;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#social {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 90%;
+  align-items: center;
+}
+
+#social a {
+  width: auto;
+}
+
+#social a img{
+  max-width: 2em;
+  padding: 0.5em;
 }
 
 /* Small mobiles */
 @media only screen and (max-width: 320px) {
+  #links a {
+    font-size: 1em;
 }
+
+  #about-me-img {
+  max-width: 7.5em;
+}
+
+
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px){
 }
 /* Laptop & Desktop screen */
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 1023px) {
+
+  #projects {
+    display: flex;
+    
+  }
+
+  .project {
+   
+  }
+
+  .project-picture {
+    
+  }
 }
 /* Large screen */
 @media only screen and (min-width: 1440px) {
