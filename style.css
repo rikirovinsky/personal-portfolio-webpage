@@ -14,6 +14,14 @@ h3 {
   color: var(--titles);
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
 body {
   font-family: "Lato", sans-serif;
   background-color: var(--mainBackground);
@@ -47,23 +55,20 @@ body {
 }
 
 #welcome-section {
-  width: 90%;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  align-content: center;
   justify-content: center;
   align-items: center;
-}
-#welcome-section h1 {
-  font-size: 3em;
   text-align: center;
+  box-sizing: border-box;
+  padding: 0 2em;
 }
 
 #welcome-section p {
   padding-top: 0.5em;
   font-size: 2em;
-  text-align: center;
 }
 
 #main-wrapper {
@@ -74,13 +79,7 @@ body {
   box-sizing: border-box;
 }
 
-#projects {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-}
-
-#projects .title {
+.title {
   background-color: var(--mainSection);
   width: 100%;
   height: 50px;
@@ -91,19 +90,25 @@ body {
   margin: 00.5em 0;
 }
 
-.title h2 {
-  font-size: 1.5em;
+#projects {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  box-sizing: border-box;
 }
 
 .project {
   height: auto;
   max-width: 100%;
-  margin-top: 00.5em;
 }
 
 .project-picture {
   height: auto;
   max-width: 100%;
+  max-height: auto;
+  margin: auto;
 }
 
 #about-me {
@@ -167,7 +172,7 @@ input[type="submit"] {
   width: auto;
 }
 
-#social a img{
+#social a img {
   max-width: 2em;
   padding: 0.5em;
 }
@@ -176,18 +181,27 @@ input[type="submit"] {
 @media only screen and (max-width: 320px) {
   #links a {
     font-size: 1em;
-}
+  }
 
   #about-me-img {
-  max-width: 7.5em;
-}
-
-
-/* Tablet */
-@media only screen and (min-width: 768px){
+    max-width: 7.5em;
+  }
 }
 /* Laptop & Desktop screen */
 @media only screen and (min-width: 1023px) {
+  .project {
+    flex: 49% 1;
+    padding: 0.1em;
+    height: auto;
+  }
+
+  .floating-text {
+    padding: 1em 20em;
+  }
+
+  .contact-me-info {
+    padding: 1em 20em;
+  }
 }
 /* Large screen */
 @media only screen and (min-width: 1440px) {
